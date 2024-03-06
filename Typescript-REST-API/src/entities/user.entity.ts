@@ -5,14 +5,14 @@ export class User extends BaseEntity {
   @PrimaryGeneratedColumn() //기본 키
   id!: number;
 
-  @Column({ nullable: false }) // null 허용x
+  @Column()
   name!: string;
 
-  @Column({ nullable: false })
+  @Column()
   phone!: number;
 
-  @Column({ nullable: false })
+  @Column()
   email!: string;
-  @Column({ nullable: false })
+  @Column()
   age!: number;
 }

@@ -12,7 +12,7 @@ export const db = createConnection({
   password: DB_PASSWORD, // 데이터베이스 비밀번호
   database: DB_DATABASE, // 사용할 데이터베이스 이름
   entities: ["./src/entities/**/*.ts"], // TypeORM이 사용할 엔티티 목록
-  synchronize: true, // 엔티티 스키마와 데이터베이스 스키마를 동기화할지 여부 (개발 환경에서는 true로 설정하는 것이 일반적, 프로덕션 환경에선 보안 및 데이터 무결성 문제로 false )
+  //synchronize: true, // 엔티티 스키마와 데이터베이스 스키마를 동기화할지 여부 (개발 환경에서는 true로 설정하는 것이 일반적, 프로덕션 환경에선 보안 및 데이터 무결성 문제로 false )
 })
   .then((connection) => {
     console.log("Successful database connection!");
